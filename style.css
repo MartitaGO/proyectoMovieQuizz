@@ -3,11 +3,7 @@
     padding: 0;
 }
 
-html {
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
+/* Centrar main */
 main {
     display: flex;
     flex-direction: column;
@@ -15,15 +11,22 @@ main {
     align-items: center;
 }
 
+/* Customizar el header */
 header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 7px;
-    margin-bottom: 7px;
+    padding: 10px;
     width: 100%;
 }
 
+/*Customizar la puntuación */
+#points {
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+/* Customizar la pregunta */
 #question {
     width: 30rem;
     text-align: center;
@@ -36,16 +39,10 @@ header {
     margin: 3%;
 }
 
-#answer {
+/* Crear columna de respuestas y customizar los botones */
+button {
     display: flex;
     flex-direction: column;
-}
-
-li {
-    list-style: none;
-}
-
-.answers {
     background-color: white;
     color: black;
     width: 30rem;
@@ -54,14 +51,17 @@ li {
     margin: 5px 40px 5px;
 }
 
-.answers:hover {
+/* Color de los botones al pasar por ellos */
+button:hover {
     background-color: rgb(8, 97, 67);
 }
 
-.answers:active {
+/*Color del botón seleccionado */
+button:active {
     background-color: gray;
 }
 
+/*Customizar el footer */
 footer {
     background-color: black;
     color: white;
@@ -69,4 +69,5 @@ footer {
     bottom: 0;
     width: 100%;
     height: 40px;
+    padding: 10px;
 }
