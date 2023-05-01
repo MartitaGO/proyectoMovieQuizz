@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Centrar main */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("./imagenes/cine");
+    height: 100%;
+    width: 100%;
+}
+
+/* Customizar el header */
+header {
+    background-color: rgba(177, 78, 12, 0.712);
+    color: black;
+    text-align: center;
+    padding: 7px;
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+/* Customizar la pregunta */
+#question {
+    width: 90%;
+    text-align: center;
+    border-radius: 3rem;
+    background-color: rgba(238, 56, 44, 0.904);
+    color: black;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+
+#answers {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+#points {
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: rgb(204, 25, 25);
+    -webkit-text-stroke: 5px black;
+    margin-top: 20px;
+    background-color: bisque;
+    border-radius: 3rem;
+    border-style: solid;
+    padding: 5px 10px;
+    border-color: black;
+}
+
+#progress {
+    width: 100px%;
+    text-align: center;
+    border-radius: 3rem;
+    background-color: rgba(238, 56, 44, 0.904);
+    color: black;
+    border-style: solid;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+
+/* Crear columna de respuestas y customizar los botones */
+button {
+    background-color: bisque;
+    color: black;
+    width: 18rem;
+    border-radius: 3rem;
+    padding: 20px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Color de los botones al pasar por ellos */
+button:hover {
+    background-color: rgb(8, 97, 67);
+}
+
+/*Color del botón seleccionado */
+button:active {
+    background-color: gray;
+}
+
+/*Customizar el footer */
+footer {
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 1000px) {
+
+    html {
+        font-size: 1rem;
+    }
+
+    #points {
+        margin-top: 10px;
+    }
+
+    #question {
+        width: 50rem;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    button {
+        margin: 10px 40px 10px;
+    }
+
+}

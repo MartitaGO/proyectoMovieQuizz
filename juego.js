@@ -34,7 +34,7 @@ function showQuestion() {
   } of ${questions.length}`;
 }
 
-// Comprobar si la respuesta seleccionada es correcta y sumamos 1 punto
+// Comprobar si la respuesta seleccionada es correcta y sumamos 1 punto. Tras 'else', finalizamos la última pregunta y en pantalla solo aparece la puntuación
 function checkAnswer(answer, correctAnswer) {
   if (answer === correctAnswer) {
     alert("Right answer!");
