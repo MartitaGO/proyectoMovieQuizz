@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url("./images/Services.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+    width: 100vw;
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Header */
+
+header {
+    padding: 1.5rem;
+    margin-top: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Botón de inicio */
+
+.start {
+    margin-bottom: 1rem;
+    position: relative;
+    color: rgb(255, 255, 255);
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Color del botón de inicio al pasar por el mismo */
+
+.start:hover {
+    color: rgb(171, 130, 210);
+}
+
+hr {
+    margin: auto;
+    background-color: rgb(238, 130, 41);
+    border: none;
+    width: 80%;
+    height: 0.1rem;
+}
+
+/* Imágenes */
+
+#images {
+    margin: 0.8rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+img {
+    margin: 1rem;
+    width: 40%;
+}
+
+/* Modal */
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.modal-content {
+    display: flex;
+    margin: 1rem;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Preguntas */
+
+#question {
+    margin: 1rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+/* Respuestas */
+
+#answers {
+    display: flex;
+    margin: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Puntos */
+
+#points {
+    align-items: start;
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+}
+
+/* Contador de preguntas */
+
+#progress {
+    text-align: center;
+    color: rgb(207, 193, 188);
+    font-size: 1rem;
+}
+
+/* Columna de respuestas y personalizacion de los botones */
+
+#answers button {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(151, 208, 255);
+    border-radius: 3rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Color de los botones al pasar por ellos */
+
+#answers button:hover {
+    background-color: rgb(30, 14, 255);
+}
+
+/* Color del botón seleccionado */
+
+#answers button:active {
+    background-color: rgb(136, 119, 222);
+    color: black;
+}
+
+/* Footer */
+
+footer {
+    padding: 0.5rem;
+    position: relative;
+    background-color: black;
+    color: white;
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+/* Diseño responsive para tablets */
+
+@media (min-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    img {
+        width: 35%;
+    }
+
+    #points {
+        font-size: 1rem;
+    }
+
+    #question {
+        font-size: 1.6rem;
+    }
+
+    #answers button {
+        font-size: 1.5rem;
+    }
+
+    button {
+        margin: 10px 40px 10px;
+    }
+}
+
+/* Diseño responsive para ordenador */
+
+@media (min-width: 1000px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 20%;
+    }
+}

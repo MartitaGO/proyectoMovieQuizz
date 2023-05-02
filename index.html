@@ -1,32 +1,43 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Quiz</title>
-</head>
-<body>
-    <header>
-        <h1>Can you guess the movie?</h1>
-        <p>Find out if you are a film addict with this fun quiz</p>
-    </header>
-    <main>
-        <div>
-            <p id="points">Score</p>
-        </div>
-        <h2 id="question">Question</h2>
-        <ul>
-            <li><button class="answers"></button></li>
-            <li><button class="answers"></button></li>
-            <li><button class="answers"></button></li>
-            <li><button class="answers"></button></li>
-        </ul>
-    </main>
-    <footer>
-        <p>&copy; HACKABOSS 2023</p>
-        <p>Guillermo Alberto Smith Ramos, Marta García Ortiz, Eliana Gasparin y Lykos Hunter.</p>
-    </footer>
-    <script type="module" src="moviequiz.js"></script>
-</body>
+<html>
+    <head>
+	    <meta charset="UTF-8">
+        <meta lang ="en">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Trivia Game</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    </head>
+    <body>
+        <header>
+            <h1>Can you guess the movie?</h1>
+            <p>Find out if you are a film addict with this fun quiz</p>
+        </header>
+        <main>            
+            <button class="start">Start</button>
+            <hr />
+            <div id="images">
+                <img src="images/titanic.png" alt="Picture of the movie Titanic" />
+                <img src="images/pulp-fiction.png" alt="Picture of the movie Pulp Fiction" />
+                <img src="images/et.png" alt="Picture of the movie E.T." />
+            </div>
+            <div class="modal">
+                <div class="modal-content">
+                    <p id="points">Score: 0</p>
+                    <h2 id="question">Question</h2>
+                    <div id="answers"></div>
+                    <div id="progress"></div>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy; HACKABOSS 2023</p>
+            <p>Created by: Guillermo Alberto Smith Ramos, Marta García Ortiz, Eliana Gasparin y Lykos Hunter.</p>
+        </footer>
+    <script type="module" src="juego.js"></script>
+    <script type="module" src="modal.js"></script>
+    </body>
 </html>
