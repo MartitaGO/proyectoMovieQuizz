@@ -42,6 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 /* Botón de inicio */
@@ -56,6 +57,7 @@ main {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+    width: 10%;
 }
 
 /* Color del botón de inicio al pasar por el mismo */
@@ -173,19 +175,20 @@ footer {
     position: relative;
     background-color: black;
     color: white;
-    font-size: 0.5rem;
+    font-size: 0.8rem;
     text-align: center;
+    width: 100vw;
 }
 
 /* Diseño responsive para tablets */
 
 @media (min-width: 700px) {
     h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     header p {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     img {
@@ -193,19 +196,23 @@ footer {
     }
 
     #points {
-        font-size: 1rem;
+        font-size: 2rem;
     }
 
     #question {
-        font-size: 1.6rem;
+        font-size: 2.3rem;
     }
 
     #answers button {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     button {
         margin: 10px 40px 10px;
+    }
+
+    #progress {
+        font-size: 1.8rem;
     }
 }
 
@@ -213,10 +220,18 @@ footer {
 
 @media (min-width: 1000px) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.5rem;
+    }
+
+    .start {
+        font-size: 2rem;
     }
 
     img {
         width: 20%;
+    }
+
+    footer {
+        font-size: 1rem;
     }
 }
